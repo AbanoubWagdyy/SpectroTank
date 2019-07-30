@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:paddingBottom="15dp"
+                  android:layout_marginStart="20dp"
+                  android:layout_marginEnd="20dp"
+                  android:orientation="vertical">
+
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center_horizontal"
+                   android:background="@drawable/icon"/>
+
+        <TextView
+                android:id="@+id/tvIMEILabel"
+                android:layout_width="match_parent"
+                android:text="IMEI"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:id="@+id/etName"
+                android:singleLine="true"
+                android:hint="Name ..."
+                android:textColor="@color/white"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit_text_background"/>
+
+        <org.angmarch.views.NiceSpinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey"
+                android:layout_marginTop="20dp"/>
+
+        <ImageView
+                android:id="@+id/ivShape"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/rec"/>
+
+        <TextView
+                android:id="@+id/tvLengthLabel"
+                android:layout_width="match_parent"
+                android:text="Length (cm)"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingStart="10dp"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:maxLength="3"
+                android:inputType="numberDecimal"
+                android:id="@+id/etLength"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit_text_background"/>
+
+        <TextView
+                android:id="@+id/tvDiameterLabel"
+                android:layout_width="match_parent"
+                android:text="diameter (cm)"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:id="@+id/etDiameter"
+                android:maxLength="3"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit_text_background"/>
+
+        <TextView
+                android:id="@+id/tvWidthLabel"
+                android:layout_width="match_parent"
+                android:text="Width (cm)"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingStart="10dp"
+                android:id="@+id/etWidth"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:singleLine="true"
+                android:maxLength="3"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit_text_background"/>
+
+        <TextView
+                android:id="@+id/tvHeightLabel"
+                android:layout_width="match_parent"
+                android:text="Height (cm)"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingStart="10dp"
+                android:id="@+id/etHeight"
+                android:maxLength="3"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_background"/>
+
+        <LinearLayout
+                android:id="@+id/linearPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:editable="false"
+                    android:hint="Photo ..."
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/etPhoto"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:background="@drawable/edit_text_background"/>
+
+            <Button
+                    android:text="Browse"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:textSize="10sp"
+                    android:id="@+id/btnBrowse"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/button_background"
+                    android:layout_marginStart="15dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/icon"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:text="Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSync"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".ui.HomeActivity">
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.2">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   app:srcCompat="@drawable/icon"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/relativeImeValidation" android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+        <ImageView android:id="@+id/iv1"
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:layout_centerInParent="true"
+                   app:srcCompat="@drawable/configure"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#FFFFFF"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:textSize="20sp"
+                  android:text="Configure Device"
+                  android:layout_below="@+id/iv1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/relativeSync"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+        <ImageView android:id="@+id/iv2"
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:layout_centerInParent="true"
+                   app:srcCompat="@drawable/sync"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#FFFFFF"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:text="Sync"
+                  android:textSize="20sp"
+                  android:layout_below="@+id/iv2"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1.3">
+
+    </LinearLayout>
+
+</LinearLayout>

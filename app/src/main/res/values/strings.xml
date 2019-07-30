@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">SpectroTank</string>
+
+    <string-array name="type">
+        <item>Select Category</item>
+        <item>Rectangular</item>
+        <item>Square</item>
+        <item>Horizontal cylin.</item>
+        <item>Vertical Cylin.</item>
+    </string-array>
+
+    <string-array name="type_real">
+        <item>NO</item>
+        <item>REC</item>
+        <item>SQ</item>
+        <item>HC</item>
+        <item>VC</item>
+    </string-array>
+</resources>
